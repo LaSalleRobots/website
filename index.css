@@ -1,0 +1,125 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  position: fixed;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.589);
+  z-index: 999999;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20pt;
+  margin-left: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("images/IMG_20210409_172109.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main p {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 25pt;
+  margin-left: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section h1 {
+  font-size: 100pt;
+  margin: 0px;
+  margin-left: 1.5rem;
+  text-transform: uppercase;
+  /*transform: rotate(90deg) translate(0%, 60%);*/
+}
+
+section p {
+  font-size: 40pt;
+  margin-left: 1.5rem;
+}
+
+#about {
+  justify-content: center;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+#about p {
+  font-size: 40pt;
+  margin-left: 1.5rem;
+}
+
+#sponsors {
+  justify-content: center;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+#sponsors p {
+  font-size: 90pt;
+}
+
+#robots #grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+
+#robots #bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(150vh / 4);
+  filter: brightness(70%);
+}
+
+#robots #bot h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  filter: brightness(180%);
+  color: white;
+}
+
+#robots #bot {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
