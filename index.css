@@ -94,6 +94,9 @@ section p {
 #sponsors p {
   font-size: 90pt;
 }
+#robots #list {
+  display: none;
+}
 
 #robots #grid {
   display: grid;

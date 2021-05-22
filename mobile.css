@@ -1,0 +1,161 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  position: fixed;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.589);
+  z-index: 999999;
+  text-align: center;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 17pt;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/IMG_20210409_172109.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main p {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  margin: 1rem;
+}
+section h1 {
+  font-size: 3rem;
+}
+section p {
+  font-size: 2rem;
+}
+
+#robots #grid {
+  display: none;
+}
+
+.robot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.robot h2 {
+  font-size: 3rem;
+}
+.robot img {
+  max-width: 70vw;
+}
+
+#team .grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10%;
+}
+
+.person h2 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.person p {
+  font-size: 1.5rem;
+}
+
+.person img {
+  width: 50vw;
+  height: 50vw;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    height: 80vh;
+  }
+  #list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .robot img {
+    max-width: calc(100vw / 5);
+  }
+
+  #team .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  #team .person {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-decoration: none;
+  }
+
+  #team .person h2 {
+    font-size: 3rem;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #team .person p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 2.5rem;
+  }
+
+  #team img {
+    width: 25ch;
+    height: 25ch;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  #team .person {
+    flex-direction: column;
+  }
+}

@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La Salle Robotics Club - Making the future happen</title>
     <meta name="description" content="The La Salle Robotics Club builds robots for FIRST's FTC and builds robots to assist at schools." />
@@ -15,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="mobile.css" />
   </head>
   <body>
     <nav>
@@ -33,31 +32,35 @@
     <section id="about">
       <h1>About</h1>
       <p>
-        we are a robotics from the heart of la salle college prep's makerspace.
+        We are a robotics team from the heart of La Salle College Prep's makerspace.
         We are passionate about solving issues in our community. Our robots
-        solve problems not only from competitions but also in the real world.
+        solve problems not only from competitions but also in the <span>real world</span>.
       </p>
     </section>
     <section id="robots">
       <h1>Robots</h1>
-      <div id="grid">
-        <div
-          id="bot"
-          style="background-image: url('images/IMG_20210409_172120.png')"
-        >
-          <h2>Launch-R</h2>
+      <div id="list">
+        <div class="robot">
+          <div>
+            <h2>Launch-R</h2>
+            <img src="images/IMG_20210409_172120.png"  alt="A photo of Launch-R"/>
+          </div>
+          <p>Our robot from the 2020-2021 Ultimate Goal Season. The challenge in building this robot was integrating each seperately designed part together to produce the final robot.</p>
         </div>
-        <div id="bot" style="background-image: url('images/Image 1.png')">
+        <div class="robot">
           <h2>Wall-E</h2>
+          <img src="images/Image 1.png"  alt="A photo of Wall-E"/>
+          <p>Our second revision of our 2019-2020 Skystone Season. This robot was built to incorperate the learnings of our previous robot and to include our new mechanum wheels.</p>
         </div>
-        <div id="bot" style="background-image: url('images/Image 2.png')">
+        <div class="robot">
           <h2>Cran-E</h2>
+          <img src="images/Image 2.png"  alt="A photo of Cran-E"/>
+          <p>Our first robot for the 2019-2020 Skystone Season. When it was constructed we planed on our bricks as high as possible. However this design turned to be an issue because of not properly balancing the weight of the robot.</p>
         </div>
-        <div
-          id="bot"
-          style="background-image: url('images/IMG_20191008_161445.png')"
-        >
+        <div class="robot">
           <h2>Dev Bot</h2>
+          <img src="images/IMG_20191008_161445.png"  alt="A photo of Dev Bot"/>
+          <p>This robot was build in order to help the programming team to learn how different instructions would affect the existing robot.</p>
         </div>
       </div>
     </section>
