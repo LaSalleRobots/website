@@ -1,105 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Salle Robotics Club - Making the future happen</title>
-    <meta name="description" content="The La Salle Robotics Club builds robots for FIRST's FTC and builds robots to assist at schools." />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="mobile.css" />
-  </head>
-  <body>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#robots">Robots</a>
-      <a href="#team">Team</a>
-      <!--<a href="#sponsors">Sponsors</a>-->
-      <!--<a href="#social">Social</a>-->
-    </nav>
-    <main id="home">
-      <img src="logo.svg" alt="Maker Industries Logo" style="width: 80%" />
-      <p>Making robots, inspiring the future</p>
-    </main>
-    <section id="about">
-      <h1>About</h1>
-      <p>
-        We are a student-lead robotics team from the heart of La Salle Catholic College Preperatory's makerspace.
-        We are passionate about solving issues in our community. 
-        We wish to inspire the next generation of thinkers and creators by having a fun and safe learning environment for our thoughts and ideas to flourish.
-      </p>
-    </section>
-    <section id="robots">
-      <h1>Robots</h1>
-      <div id="list">
-        <div class="robot">
-          <div>
-            <h2>Launch-R</h2>
-            <img src="images/IMG_20210409_172120.png"  alt="A photo of Launch-R"/>
-          </div>
-          <p>Our robot from the 2020-2021 Ultimate Goal Season. The challenge in building this robot was integrating each seperately designed part together to produce the final robot.</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Salle Robotics Club - Making the future happen</title>
+  <meta name="description"
+    content="The La Salle Robotics Club builds robots for FIRST's FTC and builds robots to assist at schools." />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="index.css" media="screen and (min-width: 800px)" />
+  <link rel="stylesheet" media='screen and (min-width: 200px) and (max-width: 800px)' href='mobile.css' />
+</head>
+
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#robots">Robots</a>
+    <a href="#team">Team</a>
+    <a href="#sponsors">Sponsors</a>
+    <a href="#social">Social</a>
+  </nav>
+  <main id="home">
+    <img src="logo.svg" alt="Maker Industries Logo" style="width: 80%" />
+    <p>Making robots, inspiring the future</p>
+  </main>
+  <section id="about">
+    <h1>About</h1>
+    <p>
+      We are a student-lead robotics team from the heart of La Salle Catholic College Preperatory's makerspace.
+      We are passionate about solving issues in our community.
+      We wish to inspire the next generation of thinkers and creators by having a fun and safe learning environment for
+      our thoughts and ideas to flourish.
+    </p>
+  </section>
+  <section id="robots">
+    <h1>Robots</h1>
+    <div id="list">
+      <div class="robot">
+        <h2>Sparky</h2>
+        <img src="images/sparky.png" alt="A photo of Sparky the robot">
+        <p>Sparky was the first robot of our 2021-2022 Freight Frenzy season. Sparky started out as a chassis designed in Fusion 360
+           over the summer and eventually had competition ready equipment bolted on top.</p>
+      </div>
+      <div class="robot">
+          <h2>Launch-R</h2>
+          <img src="images/IMG_20210409_172120.png" alt="A photo of Launch-R" />
+        <p>Our robot from the 2020-2021 Ultimate Goal Season. The challenge in building this robot was integrating each
+          seperately designed part together to produce the final robot.</p>
+      </div>
+      <div class="robot">
+        <h2>Wall-E</h2>
+        <img src="images/Image 1.png" alt="A photo of Wall-E" />
+        <p>Our second revision of our 2019-2020 Skystone Season. This robot was built to incorperate the learnings of
+          our previous robot and to include our new mechanum wheels.</p>
+      </div>
+      <div class="robot">
+        <h2>Cran-E</h2>
+        <img src="images/Image 2.png" alt="A photo of Cran-E" />
+        <p>Our first robot for the 2019-2020 Skystone Season. When it was constructed we planed on our bricks as high as
+          possible. However this design turned to be an issue because of not properly balancing the weight of the robot.
+        </p>
+      </div>
+      <div class="robot">
+        <h2>Dev Bot</h2>
+        <img src="images/IMG_20191008_161445.png" alt="A photo of Dev Bot" />
+        <p>This robot was build in order to help the programming team to learn how different instructions would affect
+          the existing robot.</p>
+      </div>
+    </div>
+  </section>
+  <section id="team">
+    <h1>Team</h1>
+    <div class="grid">
+      <div class="person">
+        <div>
+          <img src="people/lukas.jpg" alt="Photo of Lukas Werner" />
         </div>
-        <div class="robot">
-          <h2>Wall-E</h2>
-          <img src="images/Image 1.png"  alt="A photo of Wall-E"/>
-          <p>Our second revision of our 2019-2020 Skystone Season. This robot was built to incorperate the learnings of our previous robot and to include our new mechanum wheels.</p>
-        </div>
-        <div class="robot">
-          <h2>Cran-E</h2>
-          <img src="images/Image 2.png"  alt="A photo of Cran-E"/>
-          <p>Our first robot for the 2019-2020 Skystone Season. When it was constructed we planed on our bricks as high as possible. However this design turned to be an issue because of not properly balancing the weight of the robot.</p>
-        </div>
-        <div class="robot">
-          <h2>Dev Bot</h2>
-          <img src="images/IMG_20191008_161445.png"  alt="A photo of Dev Bot"/>
-          <p>This robot was build in order to help the programming team to learn how different instructions would affect the existing robot.</p>
+        <div>
+          <h2>Lukas Werner</h2>
+          <p>Team Captain, Veteran Member</p>
         </div>
       </div>
-    </section>
-    <section id="team">
-      <h1>Team</h1>
-      <div class="grid">
-        <div class="person">
-          <div>
-            <img src="people/lukas.jpg" alt="Photo of Lukas Werner" />
-          </div>
-          <div>
-            <h2>Lukas Werner</h2>
-            <p>Team Captain, Veteran Member</p>
-          </div>
+      <div class="person">
+        <div>
+          <img src="people/roman.jpg" alt="Photo of Roman Elliott" />
         </div>
-        <div class="person">
-          <div>
-            <img src="people/roman.jpg" alt="Photo of Roman Elliott" />
-          </div>
-          <div>
-            <h2>Roman Elliott</h2>
-            <p>Junior Captain, Cool Guy!</p>
-          </div>
-        </div>
-        <div class="person">
-          <div>
-            <img src="people/henry.jpg" alt="Photo of Henry Cechini" />
-          </div>
-          <div>
-            <h2>Henry Cechini</h2>
-            <p>Junior Captain, Lead Builder</p>
-          </div>
-        </div>
+        <div>
+          <h2>Roman Elliott</h2>
+          <p>Junior Captain, Lead Builder</p>
         </div>
       </div>
-    </section>
-    <!--<section id="sponsors">
-      <h1>Sponsors</h1>
-      <p>Intel Welocalize Spotify Autodesk</p>ters to in
-    </section>-->
-  </body>
+      <div class="person">
+        <div>
+          <img src="people/henry.jpg" alt="Photo of Henry Cechini" />
+        </div>
+        <div>
+          <h2>Henry Cechini</h2>
+          <p>Junior Captain, Lead Builder</p>
+        </div>
+      </div>
+      <div class="person">
+        <div>
+          <img src="people/nate.jpg" alt="Photo of Nathaniel Broudy" />
+        </div>
+        <div>
+          <h2>Nathaniel Broudy</h2>
+          <p>Builder, Nerd Multi-Tool</p>
+      </div>
+    </div>
+    <div class="person">
+      <div>
+        <img src="people/nathan.png" alt="Photo of Nathan Carpenter" />
+      </div>
+      <div>
+        <h2>Nathan Carpenter</h2>
+        <p>Builder, Field Manager</p>
+    </div>
+  </div>
+  </section>
+  <section id="sponsors">
+    <h1>Sponsors</h1>
+    <div class="center">
+      <img src="images/studio_june.png" alt="Studio June">
+    </div>
+  </section>
+  <section id="social">
+    <h1>Social</h1>
+    <div class="grid">
+      <div>
+        <p>
+          <a href="https://github.com/LaSalleRobots">
+            <img src="images/github.svg" alt="GitHub Logo" />
+            Github
+          </a>
+        </p>
+        <p>
+          <a href="https://www.youtube.com/channel/UCrhrJAZ6ggpGEe7ewZh-bQw ">
+            <img src="images/youtube.svg" alt="Youtube Logo" />
+            Youtube
+          </a>
+        </p>
+      </div>
+      <div>
+        <p>
+          <a href="https://www.twitch.tv/lspreprobotics">
+            <img src="images/twitch.svg" alt="Twitch Logo" />
+            Twitch
+          </a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/lspreprobotics/">
+            <img src="images/instagram.svg" alt="Instagram Logo" />
+            Instagram
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>

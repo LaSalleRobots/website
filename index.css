@@ -32,11 +32,25 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
+  position: relative;
+}
+main:before {
+  content: "";
   background-image: url("images/Team Jumping.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+main img {
+  position: relative;
 }
 
 main p {
@@ -50,13 +64,14 @@ main p {
 }
 
 section {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 section h1 {
-  font-size: 100pt;
+  font-size: 50pt;
   margin: 0px;
   margin-left: 1.5rem;
   text-transform: uppercase;
@@ -64,15 +79,15 @@ section h1 {
 }
 
 section p {
-  font-size: 40pt;
+  font-size: 20pt;
   margin-left: 1.5rem;
 }
 
 #about {
   justify-content: center;
-  text-transform: uppercase;
+
   font-style: italic;
-  font-weight: 700;
+  font-weight: 400;
   color: black;
   text-decoration: none;
 }
@@ -82,49 +97,48 @@ section p {
   margin-left: 1.5rem;
 }
 
-#sponsors {
-  justify-content: center;
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: 700;
-  color: black;
-  text-decoration: none;
-}
-
-#sponsors p {
-  font-size: 90pt;
-}
-#robots #list {
-  display: none;
-}
-
-#robots #grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-}
-
-#robots #bot {
+#sponsors .center {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  height: calc(150vh / 4);
-  filter: brightness(70%);
+  align-items: center;
 }
 
-#robots #bot h2 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  filter: brightness(180%);
-  color: white;
+#sponsors img {
+  width: auto;
+  height: 40ch;
+  object-fit: cover;
+  margin: 2rem;
 }
 
-#robots #bot {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+
+
+#robots #list {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+}
+
+.robot {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.robot h2 {
+  font-size: 35pt;
+}
+.robot p {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 2rem;
+}
+
+.robot img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 25px;
 }
 
 #team .grid {
@@ -162,4 +176,46 @@ section p {
   object-fit: cover;
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+#social .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+#social img {
+  height: 6rem;
+  width: auto;
+}
+#social p {
+  font-size: 6rem;
+  margin-left: 1.5rem;
+}
+#social a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+
+@media only screen and (max-width: 1218px) {
+  #team .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  #social .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  #robots #list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  
 }
