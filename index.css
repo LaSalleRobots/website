@@ -105,8 +105,7 @@ section p {
 }
 
 #sponsors img {
-  width: auto;
-  height: 40ch;
+  max-width: 30vw;
   object-fit: cover;
   margin: 2rem;
 }
