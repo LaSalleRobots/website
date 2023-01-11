@@ -106,9 +106,15 @@ section p {
 
 #sponsors img {
   width: auto;
-  height: 40ch;
+  height: 25ch;
   object-fit: cover;
   margin: 2rem;
+}
+
+#sponsors .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 
@@ -213,16 +219,6 @@ section p {
   object-fit: cover;
   margin-left: 2rem;
   margin-right: 2rem;
-}
-
-#sponsors .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-#sponsors img {
-  height: 8rem;
-  width: auto;
 }
 
 #social .grid {
