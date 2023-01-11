@@ -229,7 +229,7 @@ section p {
 
 #sponsors img {
   width: auto;
-  height: 25ch;
+  max-width: 80vw;
   object-fit: cover;
   margin: 2rem;
 }
