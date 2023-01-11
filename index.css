@@ -215,6 +215,16 @@ section p {
   margin-right: 2rem;
 }
 
+#sponsors .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+#sponsors img {
+  height: 8rem;
+  width: auto;
+}
+
 #social .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
